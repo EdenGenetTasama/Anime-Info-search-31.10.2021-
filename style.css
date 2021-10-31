@@ -1,0 +1,43 @@
+*{
+    background-color: darkslategray;
+    color: wheat;
+}
+
+#divShow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+#cardID{
+    width: 18%;
+}
+#ImgStyle{
+    width: 300px;
+    height: 300px;
+}
+
+.allClass{
+display: flex;
+flex-direction: column;
+}
+
+#headerID{
+    display: flex;
+    font-size: 35px;
+    
+}
+
+#InputID{
+width: 20%;
+height: 40px;
+border-color:wheat ;
+}
+
+#sectionId{
+   display: flex;
+   align-items: center;
+   margin: 5px;
+}
