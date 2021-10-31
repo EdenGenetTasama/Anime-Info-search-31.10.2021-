@@ -1,6 +1,7 @@
 *{
     background-color: darkslategray;
     color: wheat;
+    padding: 3px;
 }
 
 #divShow{
@@ -12,7 +13,7 @@
 }
 
 #cardID{
-    width: 18%;
+    width: 25%;
 }
 #ImgStyle{
     width: 300px;

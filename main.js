@@ -16,7 +16,7 @@ function runOfAllInfoFromAPI(arrayOfObject) {
     divShow.innerHTML += `<article id="cardID">
     <img src=${item.image_url} id="ImgStyle" class="allClass">
     <h2 class="allClass"> ${item.title}</h2>
-    <p class="allClass">${item.synopsis}
+    <p class="allClass">${item.synopsis}<br>
     Numbers of episodes : ${item.episodes}</p>
     </article>`;
   }
@@ -31,6 +31,9 @@ function stopGif() {
 }
 
 
+function getEmptyInfo() {
+  divShow.innerHTML = " ";
+}
 
 InputID.oninput = () => {
   if (InputID.value.length > 3) {
@@ -48,6 +51,3 @@ InputID.oninput = () => {
   }
 };
 
-function getEmptyInfo() {
-  divShow.innerHTML = " ";
-}
