@@ -41,3 +41,8 @@ border-color:wheat ;
    align-items: center;
    margin: 5px;
 }
+
+#gifImg{
+    width: 90vw;
+    height: 90vh;
+}

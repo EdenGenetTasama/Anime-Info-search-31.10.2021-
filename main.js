@@ -2,6 +2,7 @@ const urlOfAnima = "https://api.jikan.moe/v3";
 
 async function getURLInfo(api) {
   try {
+    loadingGif()
     return await fetch(api).then((res) => res.json());
   } catch (error) {
     return error;
@@ -22,8 +23,14 @@ function runOfAllInfoFromAPI(arrayOfObject) {
 }
 
 function loadingGif() {
-    
+    divShow.innerHTML  =`<img src="./89MF39Y gif.gif" id="gifImg">`
 }
+
+function stopGif() {
+    gifImg.style.display = "none"
+}
+
+
 
 InputID.oninput = () => {
   if (InputID.value.length > 3) {
@@ -34,7 +41,7 @@ InputID.oninput = () => {
       .catch((rej) => {
         console.log(rej);
       })
-      .finally(() => {});
+      .finally(() => {stopGif()});
   }
   if (InputID.value.length == 0) {
     getEmptyInfo();
