@@ -1,5 +1,6 @@
 const urlOfAnima = "https://api.jikan.moe/v3";
 
+console.log("https://api.jikan.moe/v3/search/anime?q=mal_id/5040");
 async function getURLInfo(api) {
   try {
     loadingGif()
@@ -9,7 +10,6 @@ async function getURLInfo(api) {
   }
 }
 
-// getDogUrl(urlDogFacts).then(res=>console.log(res));
 
 function runOfAllInfoFromAPI(arrayOfObject) {
   for (const item of arrayOfObject) {
@@ -36,7 +36,7 @@ function getEmptyInfo() {
 }
 
 InputID.oninput = () => {
-  if (InputID.value.length > 3) {
+  if (InputID.value.length >= 3) {
     getURLInfo(`${urlOfAnima}/search/anime?q=${InputID.value}`)
       .then((res) => {
         runOfAllInfoFromAPI(res.results);
@@ -50,4 +50,5 @@ InputID.oninput = () => {
     getEmptyInfo();
   }
 };
+
 

@@ -59,6 +59,19 @@
     align-items: center;
 }
 
+#searchByID , #searchByname {
+    width: 9%;
+    height: 41px;
+    border-color: wheat;
+   padding-right: 10px;
+   font-size: 15px;
+}
+
+#searchByID:hover , #searchByname:hover {
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+}
 #sectionId {
     display: flex;
     align-items: center;
