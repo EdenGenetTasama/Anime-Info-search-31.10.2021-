@@ -1,7 +1,9 @@
 * {
     background-color: darkslategray;
     color: wheat;
-    /* padding: 3px; */
+    margin: 0%;
+    padding: 0%;
+
 }
 
 #mainHeader {
@@ -20,18 +22,29 @@
 }
 
 #cardID {
-    width: 25%;
+    width: 20%;
+    padding-right:2%;
+    align-items: center;
+
 }
 
 #ImgStyle {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 40%;
 }
 
 .allClass {
     display: flex;
     flex-direction: column;
+    font-size:20px;
+ 
 }
+
+#titleId{
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+}
+
 
 #headerID {
     display: flex;

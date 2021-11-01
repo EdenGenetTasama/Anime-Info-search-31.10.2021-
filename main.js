@@ -14,8 +14,8 @@ async function getURLInfo(api) {
 function runOfAllInfoFromAPI(arrayOfObject) {
   for (const item of arrayOfObject) {
     divShow.innerHTML += `<article id="cardID">
-    <img src=${item.image_url} id="ImgStyle" class="allClass">
-    <h2 class="allClass"> ${item.title}</h2>
+    <img src=${item.image_url} id="ImgStyle" class="allClass"><br>
+    <h2 class="allClass" id="titleId"> ${item.title}</h2><br>
     <p class="allClass">${item.synopsis}<br>
     Numbers of episodes : ${item.episodes}</p>
     </article>`;
